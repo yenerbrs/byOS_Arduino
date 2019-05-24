@@ -1,0 +1,26 @@
+#######################################
+# Syntax Coloring Map MyName
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+by_BasicTimer	KEYWORD1
+basicTaskPtr	KEYWORD1
+by_Message	KEYWORD1
+by_TaskManager	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+check	KEYWORD2
+pause	KEYWORD2
+resume	KEYWORD2
+updateInterval	KEYWORD2
+runNow	KEYWORD2
+runTasks	KEYWORD2
+sendMessage	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################

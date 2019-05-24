@@ -1,0 +1,15 @@
+{
+  "name": "byOS",
+  "keywords": "ByOS, Timers, Tasking, Messages",
+  "description": "The byOS Library implements basic software timers and task manager.",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://playground.arduino.cc/Code/Timer1"
+  },
+  "frameworks": "arduino",
+  "platforms":
+  [
+    "atmelavr"
+  ]
+}
