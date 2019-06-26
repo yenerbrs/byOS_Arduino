@@ -4,6 +4,8 @@ byOS library includes software timers and tasking system.
 
 Timers can be set, updated, paused. Also timers can be delayed from the power on and they can be both single mode use or repetitive mode.
 
+Task system makes it easy to manage separate tasks running with complex algorithms and state machines.
+
 ## Installation
 
 Make sure you are running at least 1.6.x of the Arduino IDE.
