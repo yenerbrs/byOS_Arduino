@@ -14,9 +14,7 @@ Download library as zip and extract on the library folder.
 
 ```c
 // Variable declaration:
-<div class="text-red">
-  by_BasicTimer
-</div> timer1 = <div class="text-red">by_BasicTimer</div>(IntervalMs,DelayMs,runningFunction,RepetitiveMod);
+by_BasicTimer timer1 = by_BasicTimer(IntervalMs,DelayMs,runningFunction,RepetitiveMod);
 
 // in loop
 timer1.check();
