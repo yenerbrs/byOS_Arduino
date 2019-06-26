@@ -35,8 +35,7 @@ by_TaskManager myTaskManager = by_TaskManager(); // init task manager
 
 // Basic Task1
 void myTask1(uint16_t message) {  
-   // message is data incoming
-   
+   // message is data incoming to this function
   switch(message){
      case 0:
         //do stuff
