@@ -16,13 +16,49 @@ Download library as zip and extract on the library folder.
 // Variable declaration:
 by_BasicTimer timer1 = by_BasicTimer(IntervalMs,DelayMs,runningFunction,RepetitiveMod);
 
-// in loop
-timer1.check();
+//some function to running
+void runningFunction(){
+	// do some stuff
+}
+
+//loop function
+void loop(){
+   timer1.check();
+}
 ```
 
 ## Usage - Task System
 
 ```c
+// Variable declaration:
+by_TaskManager myTaskManager = by_TaskManager(); // init task manager
+
+// Basic Task1
+void myTask1(uint16_t message) {  
+   // message is data incoming
+   
+  switch(message){
+     case 0:
+        //do stuff
+     break;
+     case 1:
+        //do stuff
+     break;
+  }
+}
+
+void Start(){
+    // message package decleration
+    by_Message messageToSend = { myTask1,dataToSend };
+
+    // sending message to queue
+    myTaskManager.sendMessage(&messageToSend);
+}
+
+void loop(){
+    //task manager will handle the messages
+    myTaskManager.runTasks();
+}
 
 ```
 
