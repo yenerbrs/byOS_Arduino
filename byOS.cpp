@@ -63,11 +63,11 @@ void by_TaskManager::runTasks() {
 }
 
 void by_TaskManager::sendMessage(by_Message *message) {
-	if (this->messagePutNext >= 50)
-		this->messagePutNext = 0;
 	//message->timeSent = millis();
 	messageBuffer[messagePutNext] = *message;
-	messagePutNext++;
+	messagePutNext++;	
+	if (this->messagePutNext >= 50)
+		this->messagePutNext = 0;
 }
 
 
